@@ -37,7 +37,7 @@ class AssignmentController extends Controller {
      * @return mixed
      */
     public function actionIndex() {
-        $searchModel = new AssignmentSearch;
+        $searchModel = new (Yii::$app->getModule('rbac')->assignmentSearchClassName);
         $dataProvider = $searchModel->search();
         return $this->render('index', [
                     'dataProvider' => $dataProvider,

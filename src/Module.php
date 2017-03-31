@@ -15,6 +15,12 @@ class Module extends BaseModule {
 
     /**
      *
+     * @var string $assignmentSearchClassName The assignmentSearch model class.
+     */
+    public $assignmentSearchClassName = 'johnitvn\rbacplus\models\AssignmentSearch';
+
+    /**
+     *
      * @var string $userModelClassName The user model class.
      * Default it will get from `Yii::$app->getUser()->identityClass`
      */
